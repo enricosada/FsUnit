@@ -1,6 +1,8 @@
 language: csharp
+dotnet: 1.0.0-rc4-004771
 
 sudo: false  # use the new container-based Travis infrastructure 
 
 script: 
+  - dotnet --version
   - ./build.sh All
